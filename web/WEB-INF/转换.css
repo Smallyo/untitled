@@ -1,0 +1,28 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #7dffcd;
+}
+
+/*.div2{*/
+/*transform:translate(100px,100px);*/
+/*-webkit-transform: translate(200px,200px);*/
+/*-ms*/
+/*}*/
+
+/*.div2{transform: rotate(280deg);*/
+        /*-webkit-transform:translate(280deg);*/
+/*}*/
+
+/*.div2{*/
+    /*margin-top: 200px;*/
+    /*transform: scale(1,2);*/
+    /*-webkit-transform:(1,2);*/
+
+}
+.div2{
+
+    transform: skew(50deg,50deg);
+    -webkit-transform:skew(20deg,20deg);
+
+}

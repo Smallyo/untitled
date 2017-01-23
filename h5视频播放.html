@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="clickv()">播放/暂停</button>
+<button onclick="clickvBig()">放大</button>
+<button onclick="clickvSmall()">缩小</button>
+<video id="video" width="800px" height="800px">
+    <source src="C娘的日常.mp4">
+    你的浏览器不支持播放
+</video>
+<script>
+    var v=document.getElementById("video");
+    function  clickv(){
+        if (v.paused){
+            v.play();
+        }else{
+            v.pause();
+        }
+    }
+    function clickvBig(){
+        v.width=1000;
+        v.height=1000;
+    }
+    function clickvSmall(){
+        v.width=500;
+        v.height=500;
+    }
+
+
+</script>
+
+</body>
+</html>

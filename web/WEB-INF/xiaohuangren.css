@@ -1,0 +1,215 @@
+.wrapper{
+    margin: 50px 0 0 500px;
+}
+.tou{
+    position: relative;
+}
+.tou .head{
+    position:relative;
+    width: 320px;
+    height: 300px;
+    border-radius: 150px;
+    background: #07bbee;
+    background: -webkit-radial-gradient(right top,#fff 10%,#07bbee 20%,#10a6ce 75%,#000);
+    background: -moz-radial-gradient(right top,#fff 10%,#07bbee 20%,#10a6ce 75%,#000);
+    background: -ms-radial-gradient(right top,#fff 10%,#07bbee 20%,#10a6ce 75%,#000);
+    border:2px solid #555;
+    box-shadow:-5px 10px 15px rgba(0,0,0,0.45);
+
+}
+/*脸部*/
+.tou .face{
+    position: relative;
+    z-index: 2;
+}
+.tou .face .white{
+    width: 265px;
+    height: 195px;
+    border-radius: 150px;
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    background: #fff;
+    background: -webkit-radial-gradient(right top,#fff 75%, #eee 80%, 90%,#444);
+    background: -moz-radial-gradient(right top,#fff 75%, #eee 80%, 90%,#444);
+    background: -ms-radial-gradient(right top,#fff 75%, #eee 80%, 90%,#444);
+}
+
+
+/*鼻子*/
+.tou .face .nose{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #c93300;
+    border: 2px solid #000;
+    position: absolute;
+    top: 110px;
+    left: 140px;
+    z-index: 3;
+
+}
+/*鼻子下的线*/
+.tou .face .nose_line{
+    width: 3px;
+    height: 100px;
+    background: #333;
+    position: absolute;
+    top: 143px;
+    left: 155px;
+    z-index: 3;
+}
+/*嘴巴*/
+.tou .face .mouth{
+    width: 220px;
+    height: 400px;
+    /*通过底边边框加上圆角模拟笑容*/
+    border-bottom: 3px solid #333;
+    border-radius: 120px;
+    position: absolute;
+    top: -160px;
+    left: 45px;
+}
+/*眼睛*/
+.tou .eyes{
+    position: relative;
+    z-index: 3;/*眼睛在白色脸底下面*/
+}
+/*眼睛共同的样式*/
+.tou .eyes .eye{
+    width: 72px;
+    height: 82px;
+    background: #fff;
+    border: 2px solid #000;
+    border: 2px solid #000;
+    border-radius: 35px 35px;
+    position: absolute;
+    top: 40px;;
+}
+/*眼珠*/
+.tou .eyes .eye .black {
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 7px;
+    position: absolute;
+    top: 40px;
+}
+.tou .eyes .left{
+    left: 82px;
+}
+
+.tou .eyes .right{
+    left:156px;
+}
+.tou .eyes .eye .bleft {
+    left: 50px;
+}
+
+.tou .eyes .eye .bright {
+    left: 7px;
+}
+/*胡须背景*/
+.tou .whiskers{
+    width: 220px;
+    height: 80px;
+    background: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 120px;
+    left: 45px;
+    z-index: 2;
+}
+
+.tou .whiskers .whisker{
+  width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    z-index: 2;
+}
+/*右上胡子*/
+.tou .whiskers .rTop{
+    left: 165px;
+    top: 25px;
+}
+
+.tou .whiskers .rMiddle{
+    left: 167px;
+    top: 45px;
+}
+
+.tou .whiskers .rBottom{
+    left: 165px;
+    top: 65px;
+}
+
+.tou .whiskers .lTop{
+    left: 0;
+    top: 25px;
+}
+
+.tou .whiskers .lMiddle{
+    left: -2px;
+    top: 45px;
+}
+/*左下胡子*/
+.tou .whiskers .lBottom{
+    left: 0;
+    top: 65px;
+}
+
+/*胡子旋转角度*/
+.tou .whiskers .r160 {
+    -webkit-transform: rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -o-transform: rotate(160deg);
+    transform: rotate(160deg);
+}
+.tou .whiskers .r20 {
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    transform: rotate(200deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

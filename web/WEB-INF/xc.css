@@ -1,0 +1,14 @@
+
+#tb{
+    width: 500px;
+    border-collapse: collapse;
+}
+#tb td,#tb th{
+    border: 1px solid aqua;
+}
+#tb th{
+    text-align: right;
+    background-color: aqua;
+    color: beige;
+}
+#td tr

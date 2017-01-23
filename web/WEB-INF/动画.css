@@ -1,0 +1,25 @@
+div{
+    width: 100px;
+   height:100px;
+    background-color: red;
+    position: relative;
+    animation: anim 5s;
+    -webkit-animation: anim 5s;
+
+}
+@keyframes anim {
+  0%{background: red;left: 0px;top: 0px}
+  25%{background: blue;left:200px;top: 0px}
+  50%{background: #30ff42;left: 200px;top: 200px}
+  75% {background: #fff326;left: 0px;top: 200px}
+    100% {background:red;left: 0px;top: 0px}
+
+}
+@-webkit-keyframes anim {
+0%{background: red;left: 0px;top: 0px}
+25%{background: blue;left:200px;top: 0px}
+50%{background: #30ff42;left: 200px;top: 200px}
+75% {background: #fff326;left: 0px;top: 200px}
+100% {background:red;left: 0px;top: 0px}
+
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a id="aid2">aid2</a>
+<script>
+    function SetAttr(){
+        var anode =document.getElementById("aid2");
+        anode.setAttribute("title","动态设置a的title属性");
+        var attr =anode.getAttribute("title");
+        alert(attr);
+    }
+    SetAttr();
+</script>
+</body>
+</html>

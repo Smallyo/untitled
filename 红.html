@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="description" content="中国移动和阅读"/>
+    <meta name="keywords" content="中国移动和阅读"/>
+    <title>网站</title>
+    <link href="http://wap.cmread.com/rbc/p//content/repository/ues/css/s109/homePageV6_0.css" rel="stylesheet"/>
+    <link href="newcss.css" rel="stylesheet"/>
+    <script src=""></script>
+    <!--懒加载插件-->
+    <script src=""></script>
+</head>
+<body>
+<div class="videos">
+    <div class="hot" id="node_choice">
+        <div class="hot_title">
+            <div class="hot_title_left">视频专区选择</div>
+            <!--<div class="hot_hyh_right"><a href="javascript:;">换一换</a></div>-->
+        </div>
+        <div class="both"></div>
+        <ul class="hot-content">
+            <li style="background-color:#ea7d7d"><a href="javascript:;" id="11"><div>连载新番</div></a></li>
+            <li style="background-color:#cfaaf1"><a href="javascript:;" id="10"><div>完结番组</div></a></li>
+            <li style="background-color:#f1c6aa"><a href="javascript:;" id="26"><div>剧场版</div></a></li>
+        </ul>
+        <ul class="hot-content">
+            <li style="background-color:#f1dfaa"><a href="javascript:;" id="38"><div>电影</div></a></li>
+            <li style="background-color:#80debe"><a href="javascript:;" id="39"><div>电视剧</div></a></li>
+            <li style="background-color:#7dcdea"><a href="javascript:;" id="27"><div>完结剧集</div></a></li>
+        </ul>
+        <ul class="hot-content">
+            <li style="background-color:#ea7d7d"><a href="javascript:;" id="9"><div>喜闻乐见</div></a></li>
+            <li style="background-color:#cfaaf1"><a href="javascript:;" id="32"><div>娱乐鬼畜</div></a></li>
+            <li style="background-color:#f1c6aa"><a href="javascript:;" id="61"><div>运动体育</div></a></li>
+        </ul>
+        <ul class="hot-content">
+            <li style="background-color:#f1dfaa"><a href="javascript:;" id="34"><div>网络游戏</div></a></li>
+            <li style="background-color:#80debe"><a href="javascript:;" id="44"><div>单机游戏</div></a></li>
+            <li style="background-color:#7dcdea"><a href="javascript:;" id="33"><div>电子竞技</div></a></li>
+        </ul><ul class="hot-content">
+        <li style="background-color:#ea7d7d"><a href="javascript:;" id="7"><div>ACG音乐</div></a></li>
+        <li style="background-color:#cfaaf1"><a href="javascript:;" id="31"><div>翻唱</div></a></li>
+        <li style="background-color:#f1c6aa"><a href="javascript:;" id="30"><div>V家</div></a></li>
+    </ul>
+        <ul class="hot-content">
+            <li style="background-color:#f1dfaa"><a href="javascript:;" id="28"><div>MADAMV</div></a></li>
+            <li style="background-color:#80debe"><a href="javascript:;" id="6"><div>MMD·3D</div></a></li>
+            <li style="background-color:#7dcdea"><a href="javascript:;" id="25"><div>原创·配音</div></a></li>
+        </ul>
+    </div>
+
+   <div>
+       <button onclick="clickv()">播放/暂停</button>
+       <button onclick="clickvBig()">放大</button>
+       <button onclick="clickvSmall()">缩小</button>
+       <video id="video" width="800px" height="800px">
+           <source src="C娘的日常.mp4">
+           你的浏览器不支持播放
+       </video>
+       <script>
+           var v=document.getElementById("video");
+           function  clickv(){
+               if (v.paused){
+                   v.play();
+               }else{
+                   v.pause();
+               }
+           }
+           function clickvBig(){
+               v.width=1000;
+               v.height=1000;
+           }
+           function clickvSmall(){
+               v.width=500;
+               v.height=500;
+           }
+
+
+       </script>
+   </div>
+
+
+
+
+</div>
+
+</body>
+</html>

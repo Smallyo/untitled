@@ -1,0 +1,122 @@
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+body{   margin: 0 auto;
+    text-align: center;
+    font-family: simsun;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+
+}
+li{
+    list-style: none;
+}
+a{  color: #666666;
+    text-decoration: none;
+}
+/*顶部开始*/
+#top{
+    background: #F1F1F1;
+    height: 30px;
+
+}
+#top .Secondary{    width: 1210px;
+    height: 30px;
+    border: 1px solid red;
+    margin: 0 auto;
+    position: relative;
+}
+#top .Secondary .left{
+    width:100px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+
+}
+#top .Secondary .left .icon{width: 15px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top:10px;
+    background: no-repeat url("./img/tb1.png") 0px 0px;
+
+
+}
+#top .Secondary table{
+    position: absolute;
+    right:0px;
+    top:6px;
+
+}
+#top .Secondary table tr td{position: relative;
+
+}
+#top .Secondary table tr td .icon{  width: 15px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    right: 4px;
+    top:4px;
+    background: no-repeat url("./img/tb1.png") 0px 0px;
+
+
+}
+#top .Secondary table tr td .icon1{  width: 15px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    left: 4px;
+    top:-1px;
+    background: no-repeat url("./img/sj.png") 0px 0px;
+
+}
+#top .Secondary table tr td{
+    border-left: 1px solid #DDDDDD;
+}
+#top .Secondary table tr .k1{
+    border: 0px;
+}
+.hver:hover{
+    color: red;
+}
+
+/*顶部鼠标悬停区域送至北京*/
+#top .hover-hide{
+    width:313px;
+    height:247px;
+    border: 1px solid #DFDFDF;
+    position: absolute;
+    top:29px;
+    z-index: 2;
+    background-color: white;
+    display: none;
+}
+#top .hover-hide table{
+    position: absolute;
+    left:0px;
+    top:0px;
+    border: none;
+}
+#top .hover-hide table tr td{
+    border: none;
+}
+#top .hover-hide table td:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#top .Secondary .left:hover .hover-hide{
+    display: block;
+
+}
+
+
+
+
+
+
+

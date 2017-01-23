@@ -1,0 +1,92 @@
+.jiu1{
+    height: 200px;
+    width: 200px;
+    background-color: #30ff42;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    float:none;
+    border-radius:15px;
+}
+.jiu2{
+    height: 200px;
+    width: 200px;
+    background-color: #ff9b52;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    border-radius:15px;
+}
+.jiu3{
+    height: 200px;
+    width: 200px;
+    background-color: #ff69c0;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    border-radius:15px;
+}
+.jiu4{
+    height: 200px;
+    width: 200px;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    position:absolute;
+    left:230px;top:3px;background: #ff382f;
+    border-radius:15px;
+
+}
+.jiu5{
+    height: 200px;
+    width: 200px;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    position:absolute;
+    left:450px;top:3px;background: #6bd8ff;
+    border-radius:15px;
+
+}
+.jiu6{
+    height: 200px;
+    width: 200px;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    position:absolute;
+    left:230px;
+    top:220px;
+    background: #9ea1ff;
+    border-radius:15px;
+
+}
+.jiu7{
+    height: 200px;
+    width: 200px;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    position:absolute;
+    left:230px;
+    top:438px;
+    background: #2efff7;
+    border-radius:15px;
+
+}
+.jiu8{
+    height: 200px;
+    width: 200px;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    position:absolute;
+    left:450px;
+    top:438px;
+    background: #ca3dff;
+    border-radius:15px;
+}
+.jiu9{
+    height: 200px;
+    width: 200px;
+    border: solid 1px;
+    margin: 5px; padding: 5px;
+    position:absolute;
+    left:450px;
+    top:220px;
+    background: #e5ffc5;
+    border-radius:15px;
+
+}

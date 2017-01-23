@@ -1,0 +1,58 @@
+/**书籍列表1*/
+.videos{max-width: 800px;min-width: 240px;width: 100%;margin: 0 auto;}
+.bookList{padding:8px;background-color:#fff;}
+.book_pic{width:75px;float:left;position:relative;}
+.book_pic img{width:100%;height:107px;}
+.book_info{margin-left:95px;position:relative;padding-bottom:3px;height:107px;}
+.bookname{margin:5px 0px;color:#121212;font-size:14px;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient: vertical;-webkit-line-clamp: 1;}
+.author{margin-bottom:20px;color:#6c6c6c;margin-left:10px;font-size:14px;}
+.author:before{content: "";background-image: url("http://sandbox.runjs.cn/uploads/rs/134/bgjylnde/nameLeft.png");background-size: 10px 10px;margin-right: 5px;width: 10px;height: 10px;position: absolute;top: 22px;left: 0px;}
+.bookdesc{color:#a3a3a3;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-height:18px;}
+.bookbox{margin-bottom:9px;}
+
+/**搜索页*/
+.sousuo{background-color:#fff;}
+.sousuo_input{height: 38px;position: relative;padding: 0 40px 0 8px;}
+.sousuo_input input{border-radius: 25px;border: 1px solid #cacaca;height: 30px;box-sizing: border-box;position: relative;width: 100%;top: 5px;font-size: 12px;color: #909090;padding: 0 0 0 36px;}
+.sousuo_img{background-image: url("http://sandbox.runjs.cn/uploads/rs/134/bgjylnde/sousuo_img.png");background-size: 100% 100%;width: 20px;height: 20px;position: absolute;top: 10px;left: 15px;}
+.sousuo_btn{position: absolute;right: 0;top: 0;height:34px;width:39px;padding: 2px 0px;line-height: 34px;text-align:center;color:#6c6c6c;font-size:12px;}
+.both{clear:both;}
+
+.hot{background-color:#fff;padding:14px 8px;position:relative;}
+.hot_title_left{float:left;margin-bottom:10px;color:#121212;font-size:14px;}
+.hot_hyh_right{float:right;margin-bottom:10px;font-size:14px;}
+.hot_hyh_right a{color:#c4c4c4;}
+.hot-content{margin-bottom:10px;line-height:27px;display: box;display: -webkit-box;display: -moz-box;box-pack: justify;-webkit-box-pack: justify;border-top: 0px;padding-top: 0px;}/*css3布局*/
+.hot-content>li{width:86px;}
+.hot-content>li>a>div{padding:0px 13px;color:#fdf6f6;text-align:center;}
+.line2{border:1px solid #d5d5d5;}
+
+.bookList_title{background-color:#fff;padding:15px 8px 0px;color:#393939;font-size:14px;}
+.bookList .bookPage li h3{margin-right:0;}
+
+
+@media (min-width:321px) and (max-width:1080px){
+    /**书籍列表1*/
+    .bookList{padding:10px;}
+    .book_pic{width:84px;}
+    .book_pic img{height:120px;}
+    .book_info{margin-left:107px;padding-bottom:3px;height:120px;}
+    .bookname{margin:7px 0px;}
+    .author{margin-bottom:23px;margin-left:12px;}
+    .author:before{content: "";background-image: url("http://sandbox.runjs.cn/uploads/rs/134/bgjylnde/nameLeft.png");background-size: 11px 11px;margin-right: 7px;width: 11px;height: 11px;top: 24px;left: 0px;}
+    .bookdesc{line-height:18px;}
+    .bookbox{margin-bottom:11px;}
+
+    /**搜索页*/
+    .sousuo_input {height: 40px;padding: 0 44px 0 10px;}
+    .sousuo_input input {top: 7px;}
+    .sousuo_img{top: 13px;left: 17px;}
+    .sousuo_btn{height:36px;width:44px;padding: 4px 0px;line-height: 36px;}
+
+    .hot{padding:16px 10px;}
+    .hot_title_left,.hot_hyh_right{margin-bottom:11px;}
+    .hot-content{margin-bottom:11px;line-height:30px;}/*css3布局*/
+    .hot-content>li{width:87px;}
+
+    .bookList_title{padding:17px 10px 0px;}
+}

@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	background: url(../images/body_bg.gif) repeat;
+	font-size: 12px;
+	font-family: "Î¢ÈíÑÅºÚ", "Microsoft Yahei", Heiti, arial !important;
+}
+
+.ni_foot {
+	text-align: center;
+	padding: 20px;
+	line-height: 24px;
+}
+.ni_contain {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.ni_contain .title_bar{
+	height:30px;
+}
+.ni_contain .title_bar .title{
+	background: #F90;
+	padding:6px;
+	color:#FFF;
+	float:left;
+	font-size: 14px;
+}
+
+.ni_contain table{
+	width:100%;
+	line-height:25px;
+}
+.ni_contain table td{
+	/* text-align:right; */
+	font-weight: bold;
+}
+.ni_contain table .td_value{
+	text-align:left;
+	font-weight: normal;
+}
+#command_list tr{
+	height:30px;
+	line-height:15px;
+	text-align:center;
+}
+#command_list tbody td{
+	font-weight: normal;
+	text-align:center;
+}
+#command_list tbody tr:hover {
+	background: #caf0bd;
+}
+tr.odd{
+	background: #FFF;
+}
+#command_list tbody tr.selected{
+	background-color: aliceblue;
+}
+
+#command_list tbody tr.selected td:first-child div{
+	background-image:url(images/selected.gif);
+	background-repeat:no-repeat;
+	margin: 6px;
+	height: 18px;
+	width: auto;
+}
+#command_list tbody tr a{
+	margin: 6px;
+}
+
+#report_list tr{
+	height:30px;
+	line-height:15px;
+	text-align:center;
+}
+#report_list tbody td{
+	font-weight: normal;
+	text-align:center;
+}
+#report_list tbody tr:hover {
+	background: #caf0bd;
+}
+
+#order_number,#order_sumPrice{
+	font-weight: bold;
+	font-size: 14px;
+}
+#report_list tbody tr{
+	background: #FFF;
+}
+#run_list tbody td{
+	font-weight: normal;
+	text-align:center;
+}
+#run_list .url{
+	width:100%
+}
+#run_list .testNumber{
+	width:50px;
+}
+td.iError,td.iFail{
+	color:red;
+}
+.pressure_btn{
+	background-color: rgb(80, 227, 255);
+	color: white;
+}
+.disable_div{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:999;
+	background-color: #aaaaaa;
+	opacity: .3;
+	filter: Alpha(Opacity=30);
+}
+.div_command_list{
+	height:210px;
+}

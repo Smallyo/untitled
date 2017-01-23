@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+　　<html lang="en">
+<head>
+    　　<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    　　<title>IE浏览器CSS transform旋转属性的演示</title>
+    　　<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    　　<style type="text/css">
+    body { font-family: "Arial", sans-serif; }
+    #example {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        border: #09f solid 1px;
+        font-weight: 900;
+        color: #09f;
+        display: block;
+        width: 200px;
+        height: 200px;
+        text-align:center;
+        line-height:200px;
+        cursor:pointer;
+    }
+    　　</style>
+    　　
+</head>
+<body>
+　　<div id="example">.</div>
+<script type="text/javascript">
+    function rotate(percent, scale){
+        var radian = Math.PI * percent;
+        var angle  = 180 * percent;
+        var scale  = 0.8;
+        var style  = document.getElementById("example").style;
+        var transform = "rotate("+ angle +"deg) scale("+ scale +")";
+
+        style.filter = "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',M11="+Math.cos(radian)*scale+",M12="+(Math.sin(radian) * -1)*scale+",M21="+Math.sin(radian)*scale+",M22="+Math.cos(radian)*scale+");";
+        style.MozTransform    = transform;
+        style.WebkitTransform = transform;
+        style.OTransform      = transform;
+        style.Transform       = transform;
+    }
+    i=0.25;
+    setInterval("rotate(i);i+=0.01", 10);
+</script>
+</body>
+</html>

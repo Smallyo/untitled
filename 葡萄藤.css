@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p {
+    color: #fff;
+}
+
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;           /*相对浏览器窗口定位，对于不定宽高度设备，让其充满整个屏幕*/
+
+    background-color: #68CDD5;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;            /*各项目两侧等距*/
+
+}
+
+.logo,
+.state,
+.footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;            /*各项目居中*/
+}
+
+.header {
+    width: 100%;
+
+    padding-top: -2%;
+    padding-left: 6%;
+}
+
+.state {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+    font-size: 1.8em;
+    line-height: 1.6em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-left-num,
+.footer-right-letter {
+    padding-top: 1.0em;
+    text-align: center;
+    font-size: 1.5em;
+}

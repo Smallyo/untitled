@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+
+<title>test</title>
+<link rel="stylesheet" type="text/css" href="demo_table.css"/>
+<link rel="stylesheet" type="text/css" href="ea_report.css"/>
+<link rel="stylesheet" type="text/css" href="jquery-ui.css"/>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker-zh-CN.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="stock_cl_runtest.js"></script>
+<script>
+$(function() {
+	$.stock_cl_runtest.init();
+}); 
+</script>
+</head>
+<style type="text/css">
+       table{
+       	table-layout: fixed;
+       }
+       table td{
+       	overflow: hidden;
+       }
+       .ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{
+       	width: 40%
+       }
+</style>
+<body>
+<div class="ni_contain">
+	<div class="ni_detailcont">
+		<div style="text-align:center;font-size:22px;">缠论跑分</div>
+		<div class="title_bar">
+			<div class="title">测评条件</div>
+		</div>
+		<table>
+			<tbody>
+				<tr>
+					<td><div>输入标的列表<span style="fioat:right;">股票数<font size=3 id="listCount">0</font>个</span></div></td>
+					<td width=20px>&nbsp;</td>
+					<td>计算时间范围</td>
+				</tr>
+				<tr>
+					<td><textarea id="stocklist" style="width:99%;height:150px;"></textarea></td>
+					<td>&nbsp;</td>
+					<td style="vertical-align:top">开始日期：<input id="startdate" type=text></input><br>
+					结束日期：<input id="Empyt Bdoy" type=text></input><br>
+
+					级别选择<br>
+					<select id=period><option value="5M">5分钟</option><option value="30M" selected>30分钟</option></select></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="pressure_btn" onclick="$.stock_cl_runtest.testStart();"><span style="font-size:18px;">开始测评</span></button></td>
+					<td>&nbsp;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="title_bar">
+			<div class="title">测评结果</div>
+		</div>
+		<div style="margin:10px 0px;text-align:right;">用时：<span id="testtime">0</span>秒      测评周期：<span id="duration">yyyy-mm-dd~yyyy-mm-ff</span>     平均涨幅:<span class="av_inc">0%</span></div>
+		<div class="div_command_list" style="height:auto;">
+			<div class="disable_div" style="dispaly:none"></div>
+			<table id="command_list" width="100%" cellpadding="0" cellspace="0">
+				<thead>
+					<tr bgcolor="#a7e3bc">
+						<th width="5%">序号</th>
+						<th width="15%">标的号</th>
+						<th>名称</th>
+						<th width="20%">买卖次数</th>
+						<th width="20%">成功率</th>
+						<th width="20%">累计盈利</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="run_target">
+						<td><span class="ui-icon ui-icon-cricle-minus showdetail" style="float:left">1</span></td>
+						<td class="stockid">SH000001</td>
+						<td class="stockname">上证指数</td>
+						<td class="transtimes">23</td>
+						<td class="success">88.8%</td>
+						<td class="increase">20%</td>
+					</tr>
+					<tr class="run_detail">
+						<td colspan=6>
+							<table style="width:95%;"align="right">
+								<thead>
+									<tr bgcolor="#b7f3dc">
+										<th width="5%">明细序号</th>
+										<th width="15%">标的号</th>
+										<th>名称</th>
+										<th class="width=10%">买入时间</th>
+										<th width="10%">买入价</th>
+										<th width="10%">买入理由</th>
+										<th width="10%">卖出时间</th>
+										<th width="10%">卖出价</th>
+										<th width="10%">卖出理由</th>
+										<th width="10%">盈利</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="run_list">
+										<td><div class="listno">1</div></td>
+										<td class="stockid">SH000001</td>
+										<td class="stockname">上证指数</td>
+										<td class="starttime">20160301</td>
+										<td class="startprice">2638</td>
+										<td class="startreason">2638</td>
+										<td class="endtime">20160402</td>
+										<td class="endprice">5178</td>
+										<td class="endreason">50%</td>
+										<td class="increase">20%</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="ui_icon ui-icon-cricle-minus showdetail" style="fioat:left;"></span><span>1</span></td>
+						<td class="stockid">SH000001</td>
+						<td class="stockname">上证指数</td>
+						<td class="transtime">23</td>
+						<td class="success">88.8%</td>
+						<td class="increase">20%</td>
+					</tr>
+					<tr>
+						<td colspan=6>
+							<table style="width:95%;" align=right>
+								<thead>
+									<tr bgcolor="#b7f3dc">
+										<th width="5%">明细序号</th>
+										<th width="15%">标的号</th>
+										<th >名称</th>
+										<th width="10%">买入时间</th>
+										<th width="10%">买入价</th>
+										<th width="10%">卖出时间</th>
+										<th width="10%">卖出价</th>
+										<th width="10%">仓位</th>
+										<th width="10%">盈利</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><div>1</div></td>
+										<td class="stockid">SH000001</td>
+										<td class="stockname">上证指数</td>
+										<td class="starttime">20160301</td>
+										<td class="startprice">2638</td>
+										<td class="endtime">20160402</td>
+										<td class="endprice">5178</td>
+										<td class="buypercent">50%</td>
+										<td class="increase">20%</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="margin:10px 0px;text-align:right;">平均涨幅：<span class="av_inc">0%</span></div>
+		<br style="clear:both;"> 
+		<br style="clear:both;">
+        <div class="ni_foot">
+          <p>网站最佳浏览体验：IE 版本 9 或以上;Firefox 版本 15.0 或以上;Safari 版本 6 或以上;谷歌浏览器</p>
+          <p>Copyright©上海禅定信息科技有限公司　沪ICP备15014785号-2</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.container{
+    column-width: 250px;
+    -webkit-column-width:250px ;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+}
+.container div{
+    width: 5px;
+    margin: 5px 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点</title>
+</head>
+<body>
+<p name="pn">hello</p>
+<p name="pn">hello</p>
+<p name="pn">hello</p>
+<p name="pn">hello</p>
+<a id="aid" title="得到了a标签的属性">hello</a>
+<a id="aid2">aid2</a>
+<ul><li>1</li><li>2</li><li>3</li></ul>
+<script>
+    function getName(){
+        var count =document.getElementsByName("pn");
+        alert(count.length);
+        var p =count[2];
+        p.innerHTML ="World";
+    }
+    function getAttr(){
+        var anode =document.getElementById("aid");
+        var attr =anode.getAttribute("id");
+        alert(attr);
+    }
+    function SetAttr(){
+        var anode =document.getElementById("aid2");
+      anode.getAttribute("title","动态设置a的title属性");
+        var attr =("title");
+        alert(attr);
+    }
+    function getChildNode(){
+        var childnode = document.getElementsByTagName("ul")[0].childNodes;
+        alert(childnode.length);
+        alert(childnode[0].nodeType);
+    }
+    getChildNode();
+   </script>
+</body>
+</html>

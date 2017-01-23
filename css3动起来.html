@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0 ">
+   <meta http-equiv="x-ua-compatible" content="IE=Edge,chrome=1">
+
+    <title>图片动起来</title>
+
+
+    <style>
+       *{
+        box-sizing: border-box;
+        }
+     #container{
+         width: 1000px;
+         height: 600px;
+         padding: 50px 0;
+         margin: 50px auto 0;
+         border: 1px solid #ccc ;
+         perspective: 800px;
+     }
+        #bili{
+            width: 2000px;
+            height: 2000px;
+            margin:0 auto;
+            background: url("323.gif") no-repeat;
+            transform:scale3d(.8 , .8, .8);
+            transition: .1s;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <div id="bili">
+    </div>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+
+    $('#container').on('mousemove',function(e){
+        var  offset =$(this).offset();
+        var x = e.pageX - offset.left;
+        var Y = e.pageY - offset.top;
+        var centerX =$(this).outerWidth() / 2;
+        var centerY =$(this).outerHeight() / 2;
+        var  deltaX =x-centerX;
+        var  deltaY =x-centerY;
+        var percentX =deltaX /  centerX;
+        var percentY =deltaY  /  centerY;
+        var  deg =30;
+        $("#bili").css({
+            transform:'rotateX('+(deg * -percentY) +'deg)  rotateY'+(deg * -percentX) +'deg) scale3d(. 9, .9, .9)'
+
+        });
+    })
+
+</script>
+</div>
+
+
+</body>
+</html>
